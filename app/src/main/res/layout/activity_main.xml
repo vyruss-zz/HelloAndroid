@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.helloandroid.MainActivity"
+    >
+    <ImageView
+        android:contentDescription="banner"
+        android:id="@+id/banner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_below="@id/banner"
+        android:padding="2sp"
+        android:layout_marginTop="16sp"
+        android:layout_marginLeft="16sp"
+        android:layout_marginStart="16sp"
+        android:id="@+id/TextOrganizationName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:text="@string/organizationName"
+        />
+    <TextView
+        android:layout_below="@id/TextOrganizationName"
+        android:padding="2sp"
+        android:layout_marginTop="16sp"
+        android:layout_marginLeft="16sp"
+        android:layout_marginStart="16sp"
+        android:id="@+id/TextPhoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:text="@string/telephoneNumber"
+        android:autoLink="phone"
+        />
+    <TextView
+        android:layout_below="@id/TextPhoneNumber"
+        android:padding="2sp"
+        android:layout_marginTop="16sp"
+        android:layout_marginLeft="16sp"
+        android:layout_marginStart="16sp"
+        android:id="@+id/TextWebAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:text="@string/webAddress"
+        android:autoLink="web"
+        />
+
+    <TextView
+        android:layout_below="@id/TextWebAddress"
+        android:padding="2sp"
+        android:layout_marginTop="16sp"
+        android:layout_marginLeft="16sp"
+        android:layout_marginStart="16sp"
+        android:id="@+id/TextAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:text="@string/streetAddress"
+        android:autoLink="map"
+        />
+
+</RelativeLayout>
