@@ -3,67 +3,118 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
 
     xmlns:tools="http://schemas.android.com/tools"
+
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/hostLayout"
     tools:context="com.example.android.helloandroid.MainActivity"
     >
-    <ImageView
-        android:contentDescription="banner"
-        android:id="@+id/banner"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/backdrop"
+            android:scaleType="centerCrop"/>
+
+        <ImageView
+            android:src="@drawable/ic_udacitylogo"
+            android:contentDescription="banner"
+            android:id="@+id/banner"
+            android:layout_width="96sp"
+            android:layout_height="96sp"
+            android:layout_margin="32sp"
+            android:layout_centerHorizontal="true"/>
 
     <TextView
+        android:id="@+id/brandLogoName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:letterSpacing="2.5"
+        android:text="udacity"
         android:layout_below="@id/banner"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FFFFFF"
+        android:textAllCaps="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:letterSpacing="2.5"
+        android:text="Opening the door to a brighter future"
+        android:layout_margin="16sp"
+        android:layout_below="@id/brandLogoName"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FFFFFF"
+        android:id="@+id/brandFlavorText"
+        />
+
+
+        <!--android:layout_below="@id/banner" -->
+        <TextView
+        android:layout_above="@id/TextPhoneNumber"
         android:padding="2sp"
         android:layout_marginTop="16sp"
         android:layout_marginLeft="16sp"
         android:layout_marginStart="16sp"
         android:id="@+id/TextOrganizationName"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/border"
         android:text="@string/organizationName"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
         />
-    <TextView
-        android:layout_below="@id/TextOrganizationName"
-        android:padding="2sp"
-        android:layout_marginTop="16sp"
-        android:layout_marginLeft="16sp"
-        android:layout_marginStart="16sp"
-        android:id="@+id/TextPhoneNumber"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/border"
-        android:text="@string/telephoneNumber"
-        android:autoLink="phone"
-        />
-    <TextView
-        android:layout_below="@id/TextPhoneNumber"
-        android:padding="2sp"
-        android:layout_marginTop="16sp"
-        android:layout_marginLeft="16sp"
-        android:layout_marginStart="16sp"
-        android:id="@+id/TextWebAddress"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/border"
-        android:text="@string/webAddress"
-        android:autoLink="web"
-        />
+        <TextView
+            android:layout_above="@id/TextWebAddress"
+            android:padding="2sp"
+            android:layout_marginTop="16sp"
+            android:layout_marginLeft="16sp"
+            android:layout_marginStart="16sp"
+            android:id="@+id/TextPhoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:text="@string/telephoneNumber"
+            android:autoLink="phone"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            />
+        <TextView
+            android:layout_above="@id/TextAddress"
+            android:padding="2sp"
+            android:layout_marginTop="16sp"
+            android:layout_marginLeft="16sp"
+            android:layout_marginStart="16sp"
+            android:id="@+id/TextWebAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:text="@string/webAddress"
+            android:autoLink="web"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            />
 
-    <TextView
-        android:layout_below="@id/TextWebAddress"
-        android:padding="2sp"
-        android:layout_marginTop="16sp"
-        android:layout_marginLeft="16sp"
-        android:layout_marginStart="16sp"
-        android:id="@+id/TextAddress"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/border"
-        android:text="@string/streetAddress"
-        android:autoLink="map"
-        />
 
-</RelativeLayout>
+        <TextView
+            android:layout_alignParentBottom="true"
+            android:padding="8sp"
+            android:layout_marginTop="16sp"
+            android:layout_marginLeft="16sp"
+            android:id="@+id/TextAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:text="@string/streetAddress"
+            android:autoLink="map"
+            android:textStyle="bold"
+            android:hint="#FFFFFF"
+            android:textColorLink="#0000FF"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            />
+    </RelativeLayout>
