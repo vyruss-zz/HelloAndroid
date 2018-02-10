@@ -4,4 +4,8 @@
     <string name="webAddress">www.udacity.com</string>
     <string name="telephoneNumber">650-555-5555</string>
     <string name="organizationName">Udacity</string>
+    <string name="flavorText">Opening the door to a brighter future.</string>
+    <string name="banner">banner</string>
+    <string name="bannername">udacity</string>
+    <string name="backgroundString">background</string>
 </resources>
