@@ -89,6 +89,7 @@
             android:layout_centerHorizontal="true"
             android:textAlignment="center"
             android:textColorLink="@color/udacityblue"
+            android:drawableLeft="@drawable/phoneicon"
             />
         <TextView
             android:layout_above="@id/TextAddress"
@@ -107,7 +108,7 @@
             android:textStyle="bold"
             android:layout_centerHorizontal="true"
             android:textAlignment="center"
-
+            android:drawableLeft="@drawable/linkicon"
             />
 
 
@@ -128,5 +129,7 @@
             android:textColorLink="@color/udacityblue"
             android:layout_centerHorizontal="true"
             android:textAlignment="center"
+            android:drawableLeft="@drawable/mapicon"
+
             />
     </RelativeLayout>
